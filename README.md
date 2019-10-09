@@ -1,2 +1,9 @@
-# Implementing-word2vec
-Coding part of cs224n Assignment 2, Stanford's Natural Language Processing with Deep Learning Course
+# Implementing Word2vec
+## Coding part of cs224n Assignment 2, Stanford's Natural Language Processing with Deep Learning Course
+In the coding part I will implement the word2vec model and train my own word vectors with stochastic gradient descent (SGD).
+* (a) Implement the sigmoid function in word2vec.py to apply the sigmoid function to an input vector. In the same file, fill in the implementation for the softmax and negative sampling loss and gradient functions: `naiveSoftmaxLossAndGradient` and `getNegativeSamples`. Then, fill in the implementation of the loss and gradient functions for the skip-gram model: `negSamplingLossAndGradient` and `skipgram`.
+* (b) Complete the implementation for your SGD optimizer: `sgd`.
+* (c) Show time! Now we are going to load some real data and train word vectors with everything you just implemented! We are going to use the Stanford Sentiment Treebank (SST) dataset to train word vectors, and later apply them to a simple sentiment analysis task. You will need to fetch the datasets first. _Note: The training process may take a long time depending on the efficiency of your implementation_. After 40,000 iterations, the script will finish and a visualization for your word vectors will appear. It will also be saved as word vectors.png in your project directory.
+
+## Written part of cs224n Assignment 2
+Here are [my solutions](https://nbviewer.jupyter.org/github/nwams/word2vec-written-solutions/blob/master/Written%20Solutions%20for%20word2vec%20from%20Stanford%20CS224n%20course.ipynb) to the written part, from the first half of Assignment 2. The goal of the written portion is to ensure that you understand word2vec. Here I do compute partial derivatives of the Naive Softmax loss function as well as the Negative Sampling loss (which is an alternative to the Naive Softmax loss).
