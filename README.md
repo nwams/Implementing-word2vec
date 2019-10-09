@@ -1,6 +1,6 @@
 # Implementing Word2vec
 ## Coding part of cs224n Assignment 2, Stanford's Natural Language Processing with Deep Learning Course
-In the coding part I will implement the word2vec model and train my own word vectors with stochastic gradient descent (SGD).
+In the coding part I implement the word2vec model and train my own word vectors with stochastic gradient descent (SGD).
 * (a) Implement the sigmoid function in word2vec.py to apply the sigmoid function to an input vector. In the same file, fill in the implementation for the softmax and negative sampling loss and gradient functions: `naiveSoftmaxLossAndGradient` and `getNegativeSamples`. Then, fill in the implementation of the loss and gradient functions for the skip-gram model: `negSamplingLossAndGradient` and `skipgram`.
 * (b) Complete the implementation for your SGD optimizer: `sgd`.
 * (c) Show time! Now we are going to load some real data and train word vectors with everything you just implemented! We are going to use the Stanford Sentiment Treebank (SST) dataset to train word vectors, and later apply them to a simple sentiment analysis task. You will need to fetch the datasets first. _Note: The training process may take a long time depending on the efficiency of your implementation_. After 40,000 iterations, the script will finish and a visualization for your word vectors will appear. It will also be saved as word vectors.png in your project directory.
